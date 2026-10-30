@@ -4,8 +4,6 @@ Source code for **Separating Topic Supervision, Hierarchical Scoring and Local M
 
 [Data format](data/README.md)
 
-This repository contains the implementation used for the revised manuscript, its 26 compact result summaries, eight figures, and manuscript sources. The main experiment and gate implementation are preserved byte for byte from the recorded runs. The figure script has one portability change: its Matplotlib cache uses the system temporary directory.
-
 ## Install
 
 Use Python 3.11. Run commands from the repository root.
