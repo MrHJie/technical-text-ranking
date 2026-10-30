@@ -2,7 +2,7 @@
 
 Source code and LaTeX sources for **Separating Topic Supervision, Hierarchical Scoring and Local Mixing in Technical Text Ranking**, by Haijie Zhang and Weidong Liu.
 
-[Data format](data/README.md) · [Reproduction details](docs/REPRODUCIBILITY.md) · [GitHub upload guide](docs/GITHUB_UPLOAD_zh.md)
+[Data format](data/README.md)
 
 This repository contains the implementation used for the revised manuscript, its 26 compact result summaries, eight figures, and manuscript sources. The main experiment and gate implementation are preserved byte for byte from the recorded runs. The figure script has one portability change: its Matplotlib cache uses the system temporary directory.
 
