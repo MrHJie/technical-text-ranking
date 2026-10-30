@@ -1,6 +1,6 @@
 # Technical Text Ranking
 
-Source code and LaTeX sources for **Separating Topic Supervision, Hierarchical Scoring and Local Mixing in Technical Text Ranking**, by Haijie Zhang and Weidong Liu.
+Source code for **Separating Topic Supervision, Hierarchical Scoring and Local Mixing in Technical Text Ranking**.
 
 [Data format](data/README.md)
 
