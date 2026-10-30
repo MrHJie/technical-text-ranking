@@ -1,0 +1,7 @@
+{
+  "graph_edges.csv": "cb5ac4600f313625280b837f2c79ac0f39378ca3954dd52886a9954aa3c243b4",
+  "oracle_patent_topics.csv": "ed4df7e26c6055643cd831f95bcc91cda53914273ce39d8e0cbedaf9791f057e",
+  "oracle_topic.csv": "b9558e9db4592f20ddea3ac8530c557d10b99fca0706652993e1e709a98e4721",
+  "patents.csv": "dcf2e0405c193f5909cc865c1af8ea2b256966ce4778f23c3250fbabd96e9e00",
+  "retrieval_pairs.csv": "bf4d39615b34f65abbccbec1549705cf0a28fc682209e875e580523004b2b1a0"
+}
