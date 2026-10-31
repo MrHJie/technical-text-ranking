@@ -53,25 +53,6 @@ The `summaries` stage requires the complete matching saved outputs in `results/h
 
 See the [reproduction guide](notes/hupd/reproduction_guide.md) for detailed steps, resource requirements, and saved-state recovery instructions.
 
-## Repository Structure
-
-```text
-scripts/                         Data processing, training, analysis, and reproduction
-tests/                           Tests
-data/hupd/                       Record identifiers, taxonomy, and derived features
-results/hupd/                    Model states, configurations, and query-level results
-figure/hupd/                     Paper figures
-ACCESS_latex_template_20260513/  Paper and supplement LaTeX sources and PDFs
-notes/hupd/                      Experiment notes, source records, and reproduction guide
-requirements-hupd.txt            Pinned dependencies
-```
-
 ## Data and Models
 
 Patent texts come from HUPD. Text representations and scores use TF–IDF, BM25, and frozen PatentSBERTa. The public reproduction materials do not redistribute raw patent texts or third-party model weights. Download scripts record upstream versions and file checksums. Data and pretrained models remain subject to their respective upstream terms. See the [source audit](notes/hupd/revision2/source_audit.md) for provenance and licensing details.
-
-## Paper Materials
-
-- [Paper PDF](ACCESS_latex_template_20260513/access.pdf)
-- [Supplementary Information PDF](ACCESS_latex_template_20260513/supplementary.pdf)
-- [Paper LaTeX Source](ACCESS_latex_template_20260513/access.tex)
