@@ -1,50 +1,17 @@
-# Technical Text Ranking
+# Public HUPD revision reproduction package
 
-Code for the paper "Separating Topic Supervision, Hierarchical Scoring and Local Mixing in Technical Text Ranking".
+Article: Candidate Composition, Ancestor Scores, and Local Mixing in Public Patent Topic Ranking
 
-## Setup
+Authors: Haijie Zhang and Weidong Liu, Inner Mongolia University.
 
-Python 3.11, all commands from the repo root.
+Artifact purpose: reconstruct the public IPC-topic ranking comparisons, candidate diagnostics and figure/table estimates, while separating supplied-state score replay from fresh fitting. See the guide for tested hardware, dependencies, observed timings and interpretation limits.
 
-```bash
-python3.11 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
+This is a local revision package, not a hosted repository or DOI deposit.
 
-On Windows: `py -3.11 -m venv .venv`, then `.venv\Scripts\Activate.ps1` in PowerShell.
+Read `notes/hupd/reproduction_guide.md`. The paper and supplement are in `ACCESS_latex_template_20260513/`; the current reviewer response, completion matrix and upload instructions are in `notes/hupd/revision2/`. Earlier response and verification notes are retained as historical records, not current completion claims.
 
-The paper's runs are CPU-only. The optional BGE runner also runs on Apple MPS. <!-- TODO: CUDA 是否可用/是否实测 -->
+Create a Python 3.11 environment and install `requirements-hupd.txt`, then run `python scripts/reproduce_hupd.py`. With all 15 supplied scoring states, the default recovers public data, restores exact scoring representations, independently verifies scores, rebuilds summaries and compiles the paper without refitting archived models. Use `--plan-only` to inspect the selected actions. `--stage data|restore|fit|analyze|summaries|paper` selects a stage; `summaries` needs neither raw text nor representation caches. Explicit `--fresh-refit` preserves the full previous experiment under `output/hupd_refit_archives/` and fits all models anew; it uses substantial CPU time. A new project without prior states or outputs fits normally. Incomplete or mixed releases stop with a recovery message. The 45 loss-matched constant-intercept controls are post-outcome secondary analyses, their supplied results are verified on default replay and summarized from outputs alone, without changing frozen primary contrasts or main BestSimple selection.
 
-## Try it without the data
+Full raw HUPD texts and third-party encoder weights are recovered from pinned upstream URLs and hashes. Confidential data and prior private-data results are excluded. Large text-feature caches are rebuilt from public text; compact fitted membership/projection/graph states and the original public-input embeddings preserve exact score replay. Every restored array is fingerprint checked. Historical liblinear fits used an unspecified internal RNG. Supplied scoring states preserve exact replay, while future fresh fits now set random_state to the declared run seed and are separate measurements. On macOS, XGBoost may also require an OpenMP runtime such as libomp.
 
-```bash
-python -m unittest discover -s tests -v
-python scripts/run_demo.py
-```
-
-The demo builds synthetic Chinese technical texts, a topic tree and a graph, then pushes one small component-disjoint experiment through all 13 local scoring methods. Two sanity checks ride along: random ranking and character deletion. Everything goes into `demo_output/`, and none of the patent data is touched. If that directory already exists, point `--output-dir` at another empty path.
-
-The scores it prints are demo output. They will not line up with any table in the paper, and they are not meant to.
-
-## Rebuilding the tables and figures
-
-Tthis part needs no raw data:
-
-```bash
-python scripts/write_revision_tex.py
-python scripts/make_revision_figures.py
-```
-
-Figures are written to `figure/revision/` as SVG, PDF and PNG, with input hashes recorded in `source_manifest.json`. Figures 1–6 belong to the revised experiments. Figures 7 and 8 are diagnostics on the older split and are not revised results.
-
-## Full experiments
-
-```bash
-python scripts/run_revision_experiments.py --seeds 17 29 43
-```
-
-Four CSVs go in `data/`: patents, document topics, the topic tree, and graph edges. A fifth file, `retrieval_pairs.csv`, is only used by the old-split diagnostics. `--prepare-only` builds splits and pools without fitting anything, which is a quick way to check the inputs parse.
-
-A full run writes new files into `results/revision/` and overwrites same-named summaries. If you want to keep the bundled snapshot around for comparison, run it in a fresh checkout.
-
+The scientific target is primary IPC topic-tree agreement on a sample selected by HUPD’s January 2016 filing_date field, whose legal filing dates are not uniformly verified, not independently judged legal/search relevance. Text component grouping is not true-family grouping. See the paper's Discussion for these and other scope limits. Read notes/hupd/revision2/reproduction_extensions.md for the expanded 24-search, 45-static-cell, 6-topology-fit, 9-gate-cell, 3-learned-score-mixing and 36-auxiliary-cell archive. Default supplied-output summaries never refit these experiments.
