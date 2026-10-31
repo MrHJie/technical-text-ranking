@@ -1,17 +1,73 @@
-# Public HUPD revision reproduction package
 
-Article: Candidate Composition, Ancestor Scores, and Local Mixing in Public Patent Topic Ranking
+Code for the paper "Separating Topic Supervision, Hierarchical Scoring and Local Mixing in Technical Text Ranking".
 
-Authors: Haijie Zhang and Weidong Liu, Inner Mongolia University.
+Paper: TODO(arXiv/DOI link) · Contact: TODO(name, affiliation, email)
 
-Artifact purpose: reconstruct the public IPC-topic ranking comparisons, candidate diagnostics and figure/table estimates, while separating supplied-state score replay from fresh fitting. See the guide for tested hardware, dependencies, observed timings and interpretation limits.
+## What is in here
 
-This is a local revision package, not a hosted repository or DOI deposit.
+```
+scripts/    entry points: demo, revision experiments, figures, tex writer
+tests/      unit tests
+data/       input CSVs (not in the repo, see Data availability)
+results/    bundled measured summaries; new runs write here
+figure/     figures; revision figures land in figure/revision/
+```
 
-Read `notes/hupd/reproduction_guide.md`. The paper and supplement are in `ACCESS_latex_template_20260513/`; the current reviewer response, completion matrix and upload instructions are in `notes/hupd/revision2/`. Earlier response and verification notes are retained as historical records, not current completion claims.
+## Setup
 
-Create a Python 3.11 environment and install `requirements-hupd.txt`, then run `python scripts/reproduce_hupd.py`. With all 15 supplied scoring states, the default recovers public data, restores exact scoring representations, independently verifies scores, rebuilds summaries and compiles the paper without refitting archived models. Use `--plan-only` to inspect the selected actions. `--stage data|restore|fit|analyze|summaries|paper` selects a stage; `summaries` needs neither raw text nor representation caches. Explicit `--fresh-refit` preserves the full previous experiment under `output/hupd_refit_archives/` and fits all models anew; it uses substantial CPU time. A new project without prior states or outputs fits normally. Incomplete or mixed releases stop with a recovery message. The 45 loss-matched constant-intercept controls are post-outcome secondary analyses, their supplied results are verified on default replay and summarized from outputs alone, without changing frozen primary contrasts or main BestSimple selection.
+Python 3.11, all commands from the repo root.
+@@ -41,7 +29,7 @@ The scores it prints are demo output. They will not line up with any table in th
 
-Full raw HUPD texts and third-party encoder weights are recovered from pinned upstream URLs and hashes. Confidential data and prior private-data results are excluded. Large text-feature caches are rebuilt from public text; compact fitted membership/projection/graph states and the original public-input embeddings preserve exact score replay. Every restored array is fingerprint checked. Historical liblinear fits used an unspecified internal RNG. Supplied scoring states preserve exact replay, while future fresh fits now set random_state to the declared run seed and are separate measurements. On macOS, XGBoost may also require an OpenMP runtime such as libomp.
+## Rebuilding the tables and figures
 
-The scientific target is primary IPC topic-tree agreement on a sample selected by HUPD’s January 2016 filing_date field, whose legal filing dates are not uniformly verified, not independently judged legal/search relevance. Text component grouping is not true-family grouping. See the paper's Discussion for these and other scope limits. Read notes/hupd/revision2/reproduction_extensions.md for the expanded 24-search, 45-static-cell, 6-topology-fit, 9-gate-cell, 3-learned-score-mixing and 36-auxiliary-cell archive. Default supplied-output summaries never refit these experiments.
+All eight figures and the tables come from the summaries bundled in `results/revision/`, so this part needs no raw data:
+Tthis part needs no raw data:
+
+```bash
+python scripts/write_revision_tex.py
+@@ -60,45 +48,3 @@ Four CSVs go in `data/`: patents, document topics, the topic tree, and graph edg
+
+A full run writes new files into `results/revision/` and overwrites same-named summaries. If you want to keep the bundled snapshot around for comparison, run it in a fresh checkout.
+
+## Appendix diagnostics (older split)
+
+These need the historical model inputs, which are not shipped:
+
+```bash
+python scripts/run_experiments.py
+python scripts/revision_gate.py --run-old-split --maxiter 150
+```
+
+The first command produces `results/fitted_models.pkl` and `results/pair_predictions.csv`; the second reads them.
+
+## Data availability
+
+The corpus, its annotations, the graph, the fitted caches and the BGE checkpoint are not in this repo. My records on where the data came from and under what terms it can be redistributed are incomplete, so I am not publishing it right now.
+
+What that means if you want to check the work: the demo runs, and every table and figure can be rebuilt from the bundled summaries, but the models cannot be refitted from raw text. The summaries can only be checked against the hashes in `source_manifest.json`. If you need the raw inputs, write to me.
+
+## Known issues
+
+- Runtime and memory for a full run are not documented yet. TODO(实测: 轮次耗时、峰值内存)
+- BGE encoding on CPU is slow; how slow depends on the batch size. TODO(实测数字)
+- The fitted caches get large and are gitignored on purpose. TODO(体积)
+- Raw-data steps have not been re-run end to end since the revision, so treat `run_experiments.py` as the least-tested path here.
+
+## Citation
+
+```bibtex
+@inproceedings{TODO,
+  title     = {Separating Topic Supervision, Hierarchical Scoring and Local Mixing in Technical Text Ranking},
+  author    = {TODO},
+  booktitle = {TODO},
+  year      = {TODO}
+}
+```
+
+## License
+
+No license file yet. TODO(代码与图表分别选什么许可，例如代码 MIT、图表 CC BY 4.0)
+
+## Contact
+
+TODO(name / affiliation / email)
