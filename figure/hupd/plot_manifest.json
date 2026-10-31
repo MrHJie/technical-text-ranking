@@ -1,0 +1,314 @@
+{
+  "generated_utc": "2026-10-31T11:19:41.688641+00:00",
+  "script_sha256": "a019e2cd76a4e0a0bfa952d28aca4f8d57c57d062571a475d1f5ef7fd939529e",
+  "backend": "Python/matplotlib",
+  "empirical_completeness_required": true,
+  "synthetic_values_used": false,
+  "input_sha256": {
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed101/complete.json": "c76e38821bc76fcd96fb70c02a17aaaffaead27fe737e92786e1d94855df6ebd",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed101/retrieval_config.json": "8eb6793b6e1095876b00aff265d4a405bae45d3b250b60118069e1bf77a9bc6c",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed101/retrieval_support.json": "81b2033dcfe0e170cd2d2e2376a19e0ecf4ea9bcac4f1b6c317c2fd67e0f49ed",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed101/stratified_config.json": "c70a4efef7d2608d5b7c368b1a7e249a0e162865555ab8efbfd4ec756e5efa59",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed101/stratified_support.json": "cdf578ddd358b673fc84845c5d5793016a8d5eb5046ab72c981da938e73a6d65",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed101/uniform_config.json": "266aeffb5398222b2dafabdd8b78b917bf60fe88215497556c2680489bfa8fdc",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed101/uniform_support.json": "bcd447db04b7e0a7630eabf4baef7b9afa5e2fbf3631e64b27812eb65e05ad11",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed211/complete.json": "075d733e62eae68c939a9b9da3c19be127156a19a6145b929af03c4538bab5d8",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed211/retrieval_config.json": "c571562b3549d36ad8501be42f01b6ae7435c74ad3f183175352ced5c56ea56a",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed211/retrieval_support.json": "5f821df51a2ab109cf90c50563c5c4f40c482f5bf52744d43a14b65e48a95d64",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed211/stratified_config.json": "6f6252574dd801264bce11b52556e77178c764f7da6649fbddb4e864da8eb509",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed211/stratified_support.json": "474ab46fc11227e57294cd2516a883459b4a2b4cdeb9db9c349bb0d8eca4a232",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed211/uniform_config.json": "acceeafae2fdde60c8757ada79da3f16a4b01aaf29a9e5887ef7e20524d4bd7e",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed211/uniform_support.json": "af53af645b5e90a7bcc30a178f0ef32f62fea5aaaffbda6fbaa7d983d9820845",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed307/complete.json": "8ed2d1573e69af909694eea522f441d6663975e353a11436628993c452f43914",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed307/retrieval_config.json": "6dcc62c680b4c1d3359cd4d1c1fe24017cac67c5dc2184b69cfae5c2c67a6776",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed307/retrieval_support.json": "b1f637986d95b0d720bf87357dd61f0c9637a611d5748eaa85e7be6369bb32fa",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed307/stratified_config.json": "b56cbf6c6c9e660ec6346a9f65e7d7dd777d3813c03561adaad5f46186b915e6",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed307/stratified_support.json": "38a778ab65d59736f9522a2da293ea0590ba4ffd721b4b173c2c1de4293f05fa",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed307/uniform_config.json": "7fa2d6ef334bcf0db239d9ce266a44f73bbd633ec8590053e60153e1fb586456",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed307/uniform_support.json": "165d2b39a950e3ff1913fdbd1878c8dc0cb64deabe817d02bd99471f7f6a70d9",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed401/complete.json": "fd3c5bc8e6672a13d8ca1ed1076896c3e141b34959645e39af95b8dc54af0c7e",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed401/retrieval_config.json": "925b3c97eab4fda84b4820146b7e6cc3fc8f19ac886d4f2b702d810cfa0659e7",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed401/retrieval_support.json": "deee00e569edadab720e35d2446bd9d066756ad5c9c3478965fb7cca9de82714",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed401/stratified_config.json": "468cb24bfa35030d4f5cf9386c06a037fa5b134fb350c490ddfd9b36b2890853",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed401/stratified_support.json": "004963a512291bec677421a32f9c8cedd82de29aba18cca729fe62eb0ad8d005",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed401/uniform_config.json": "6ea19132e057ee71714ea3fe8106f51cee840b53042cc5904c2bad7298a7dee1",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed401/uniform_support.json": "38587791d05341b7db17ae21a1a77e9c839a25eb80e310aa9161adb1b5e055e0",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed503/complete.json": "c4c6936491484b251c87fbb0d6b4c0ffc7770ab83e2dae84ded1598ad9ed5ec0",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed503/retrieval_config.json": "e62622c12b7fd3e7d26e22a04d6c1fbe1f146287774a663c29276e10f3386a5b",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed503/retrieval_support.json": "833f0fc0f839501ebc4b9272ae4bd8a7c6363d58889010819994cd12fb0fb959",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed503/stratified_config.json": "f1955b1e5777830b1b5198174cae4b164ef44bfd1d9042c561dffe2aa7670fc6",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed503/stratified_support.json": "a0b99f030dcd2ca5ed311fb855f2784a5e1b59e5be3277d8ff7b00972aeee35d",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed503/uniform_config.json": "f802df81a7bfc9da1e2d82409cdec410d2d952334a4db074b026b458abde2e79",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed503/uniform_support.json": "062fddd8359cd2de2f39e7d3a8f7fe461251f5549654b31c11d44d91fab18376",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed101/complete.json": "c97b5b63f600463b84c52cf3bcbb364a4d4e7fc806ba672c0bbfed4e24f54dfb",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed101/retrieval_config.json": "17c46f20cd3689e48cb78c3134e1c7ad1a2488cc3cbfdcb5a6588e8c1571032c",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed101/retrieval_support.json": "9141915524f0ef8b08b79126dd6c0fbe360a8f6dbac617f0fa0e4292e203aaea",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed101/stratified_config.json": "09f8c02a7f2adb9688e9f2092c84528c8069b1f5935c22cdcaff8f9d901efaf2",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed101/stratified_support.json": "d2ee7408772ba47da4bd5cf1df07704075a53c9e8e809138f9f4a839cc298a92",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed101/uniform_config.json": "5be3e099924f71f236429c92738d565bd5382e898b86f82c9a2227b7ebf77eb0",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed101/uniform_support.json": "1657b4367695149b6da04d439db7c6f80d9fdecb2fef2f78bd97662e77eb86cb",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed211/complete.json": "36846283a296cc4cc7fd3bcbb6ce9a9ea6e31b682cef613843b9fbaecc35f427",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed211/retrieval_config.json": "a38718a2459b53506b8713416d75e7333a35cd31350100cbb760b39faca2daa5",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed211/retrieval_support.json": "bc0761e18fbc02a1828782717fce03bfd80b1e6475cd7367cd8e86d4c8dc5adb",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed211/stratified_config.json": "6ce8d4aea89845d0802112056d46f053337bfe65c9027fc72531f2a5ebf46cab",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed211/stratified_support.json": "a6d14e4bf10cc4cde239af508b10152667049ecd8b60e4cbf9b69a86aef7f529",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed211/uniform_config.json": "e1e90bea8b03d2d87f78e0d45f5f270391a697144331e76e342e5e71fea65349",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed211/uniform_support.json": "70d79036f30d3aa737624b51b835f9d3c0a4bbf3eebb65495d6a958d04bf054f",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed307/complete.json": "5fd9d62882c39b80406b72346093088236e3a01721368c33d2fd7ff53a4b4bcc",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed307/retrieval_config.json": "edf59fabdc3b4d303e7e2c501a7dd3bc66b1bce17fc8c934dfe0cde3b6e2d7e3",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed307/retrieval_support.json": "fbb1519ab154fcb8f5d623e0c216101899241370a47a03f3cb5df1716f3c9265",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed307/stratified_config.json": "33f5460a0e81da1b885f945c684233b9a7dedd4f375bc1138a25a331e70bb08f",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed307/stratified_support.json": "8335b58e6542231601be7ab95e4981fcedb37bf4f326c3d88bba0d440167a952",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed307/uniform_config.json": "cc13d1cafbd2b8b65a1ed43209f7f234f4099356c86cf48359cd10a4da87ddc5",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed307/uniform_support.json": "d8d9b18416e287205e20d46784b4539da012b1e8a3b47a0390ee043cbcbf66fd",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed401/complete.json": "183a847ac886667ed44fafcfe0991f50ecf5d91412ea395cfb128f93927f8348",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed401/retrieval_config.json": "0af2fb1c82de587b6b322415e97f09cf21aaa8e13dc57e824e37eba2bacc65c2",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed401/retrieval_support.json": "888bf8108a803370cbb5f18d0fd50e26df741695415850f76ddc924750176981",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed401/stratified_config.json": "d7cf02da7b9ce2249c09378e6ed0aa537e5503eb699c49e94e5766968e10d666",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed401/stratified_support.json": "0957734d179b630216e71166e479f1a20c3ab560c39abecb092b81b74e195d2f",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed401/uniform_config.json": "8c90a73f21d88c814a9b08055f70a564dcce99b1d4a521e19d80e30ac5b19683",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed401/uniform_support.json": "b9b513496a71606738286619774571e96e98a3b4292a114380ea5bb01fa01430",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed503/complete.json": "56eae7f376b68bc9310cf5062ae72ec1509d29959eee6344f395117cd4137b7c",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed503/retrieval_config.json": "461587edd7fc3e24c1ac999094ee9dbbc467db0800e3817cf9fe088174e4af63",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed503/retrieval_support.json": "e6492ef0a6bd94638470baec26ba4a0a351bde9548437668f932bafa3cd35820",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed503/stratified_config.json": "a4c2180dd0ee8e0def1b499f29bbd9457048c21e9cbc19de90ddc0ca75235851",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed503/stratified_support.json": "b7084a21056e4a6744be596c4af39ca3737baab173d31968e0791888955bebad",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed503/uniform_config.json": "ef44dea69fcf0b4209e74aa60162ac3582cad3ceb699029f541eac13d303a540",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed503/uniform_support.json": "20146a1803d09a52f373d45626c5cea1b46d3e013362de3b12f99af6f9d2a998",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed101/complete.json": "a4aee6f30c7889c331c88cace00febea1228bc08d681bf86d3348a13a06fbd3a",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed101/retrieval_config.json": "41d50792d5f8245c95a26c1ca78a274fa0627700bf30a31530399e4411a67d81",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed101/retrieval_support.json": "6242aa06e1747851a4fbb9681d4013e4edb77882011835ce52b7ca992c35242d",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed101/stratified_config.json": "0605fa90ff2d551d228104b1ef233e902e63879b898dad5da521248af2818790",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed101/stratified_support.json": "90be6033c47ac90daabcd7b634d26f97c0d98c3f0a1b2dc58332a1ac87c7775a",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed101/uniform_config.json": "f457bb433157b0a7bc314e4935e1cfda7de323fcffc1a90e870f0e44485468de",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed101/uniform_support.json": "8ad82a4c3097a3c5e6444708138933ddee852391cf0a6909d6a94d1a708a91bf",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed211/complete.json": "4216d2b5334556ffade4ceb0640ea92e13127fef84e162d582032874d24657a6",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed211/retrieval_config.json": "aaa1a186ddaf9337fcd84f5ae60fe898edf6636bfc5a80091ad99e2257ec64cb",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed211/retrieval_support.json": "db177414c8fef1864b7913e1ca51f08796f0541cf463f0cd967772ab30e8513b",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed211/stratified_config.json": "7bedab581b6ad3aaebec33d3ed6a4fbaedfdbadd2e54c9fdda61d2f5c0856ced",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed211/stratified_support.json": "49ac3619237de8affb0a0b2c12baee15da01ef149c1202b92220e3de15f9844d",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed211/uniform_config.json": "997e4080e2e0fdc9010df21ee413d8245f879b3cfa16a1827ee49069d86d1cb0",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed211/uniform_support.json": "6a3208740d14216d9f2a4b5c2d30a4749fc3b3b0ec7caf9073133e8868d4dcca",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed307/complete.json": "ce2a0f7c2b2f85de04ad7ccd5c5707e6c22e8fe744ce69d20c098a51c24f0147",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed307/retrieval_config.json": "1fcb836df659aee22b811f8df41b7a9bc4d43ebe0eccfd5c864c1f37cf96ae99",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed307/retrieval_support.json": "46541464769ff825ff352b0daec1780c0c453cc927d301b6dd7a21714c5b0664",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed307/stratified_config.json": "30cd5f3f48e6f756a0a7328cad812cdd80919bbdf8060046a2fb60cb23fcd52d",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed307/stratified_support.json": "3ac613f5c252c370aaa5daaf5f72a37b7615306c8283e99fcd03121aed1c1f09",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed307/uniform_config.json": "932ae79148f0f1d23f2b2f0565c5497dce6675c29daa7384d4e8d7a77411608b",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed307/uniform_support.json": "217bf2727388ca1f3c1da21e619e1dfd76dc7927c68ff0a32d3949a479cfa1ee",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed401/complete.json": "bc6d0313179207208dd7fe552e7cf959587e1c4dcf6457b50d5f7bd3a6b09813",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed401/retrieval_config.json": "b10de42a0dbf2caee68e2249503d504c47c8c05edf5e4cff8efef885617306ce",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed401/retrieval_support.json": "47d5c45a8180b16a2aa360ac403b42fcfcceb6a6f1107e1b447f3e43310f05b7",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed401/stratified_config.json": "e276ce6ba8e1778f4bf2e5b6c9f05b637d2c141ca1fe664b959226077c1e101c",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed401/stratified_support.json": "ddf4eee888a35b281db5d0b9e354fd24d0b70cdd4b851576581b325745669e6f",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed401/uniform_config.json": "4fa67a09bbc0a5cf13a5b6825d78391293e4896d6107c5d7cc89e51d943f3a62",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed401/uniform_support.json": "dae7dc2770af95668100d64f5b44865dcc1183c3e93f3ec593859df4d7fe7750",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed503/complete.json": "3a6571c8b10b3957545bbc23e0ec3d833b457763b05692d48777af5721c17e37",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed503/retrieval_config.json": "5c7d4c328fa19af096fa302633d2394e834fad47dce1f838d5389fe25e7e08c6",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed503/retrieval_support.json": "a4415ee041589a52c718f2a1fa6a98ef84e382612d6b04402debfeb3e4c52adf",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed503/stratified_config.json": "e2764593acbefee6ec88f7ae4001fc823bc8ab5b9701adaa04eb06a005b06452",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed503/stratified_support.json": "798ec8742dd13184391350266fabb540dd63c6abbb43fafde6ef56fd38d3e154",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed503/uniform_config.json": "ee0cdacfc708c60ba10e08efb8a383298b2b8afc9e110e7fa43ee8296bccd643",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed503/uniform_support.json": "f3c997bb17345898c667c05908fc7a5aebd2e427e24bcece155205195e41bf7f",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/revision2/auxiliary/manifest.json": "84c2cafa4b06db4f8c08c99ab5da4cddd9e84733d927416f88ddedfb577067b0",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/revision2/auxiliary/paired_effects.csv": "5e3bc506c025aa45e0c6fc73ce90c25bba5722e5b48cd4df5abcc36e7fa4330c",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/revision2/auxiliary/plan.json": "e29d59511fb3351e795b10e9aeec5890d0b4664ba5f6af789e3e11c307e87832",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/revision2/auxiliary/summary.csv": "acfa8cd76ec4c83d6e38de57b270c0bf93f5f3a3a83e2242a173dd398150af57",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/statistics/fold_seed_summary.csv": "800b025db9ad7611fac7f79667b5469e84f8948beb48876e5287d40676b0f4e0",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/statistics/manifest.json": "af3a577cecc23990bd246dbf41ec261cae4f2e6a021c0125e305331629648cfe",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/statistics/method_seed_summary.csv": "32861318e22a7a472e594d6e1bab69ce4a852a73dc358c9ca7df199af136cc88",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/statistics/method_summary.csv": "38c2b298880b902a98196e66790909566158cf295299f6838de4219176ea6f69",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/statistics/paired_effects.csv": "47f92b1d9a30176d43d418a6dada83335b75ab4c9365b2a64f80f19374201556",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/statistics/pool_eligibility.csv": "d0880d5a7753f9a1e4079f3c7c4d5a9accbc4b99e4dbdd18a054c388375476af",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed101/uniform_query_metrics.csv.gz": "fcb05a2e8e5b5a67ec12a8a5c25f45f6ca31ee4ae8c975bcdd203d0de49dc521",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed101/retrieval_query_metrics.csv.gz": "3d86fe10ea7ce0c5db8e11b08723680d5339cb49b2314b329811b3f01a3f1e43",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold0_seed101/stratified_query_metrics.csv.gz": "04e7aaddce6114753c4a165a693a623cd8f836f1caf8700b2cbc2471713a8307",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed101/uniform_query_metrics.csv.gz": "9f295567ba843015f4e502d8c25a7ffd517c2ff8dfd044c8f1278533c2043c67",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed101/retrieval_query_metrics.csv.gz": "54797c7ec5c3d5aee299d8ff765561482bac4bb8c62d0a77c8fb5d53595c95c0",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold1_seed101/stratified_query_metrics.csv.gz": "9be96bf08032a67c3b642d6807f3a8489a5fd38ec8ad3498e94ed01c8908541f",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed101/uniform_query_metrics.csv.gz": "61a54a02610f959fbac3f476c6c35f8787f5729868d0d3e15e28bdfa0585e8a6",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed101/retrieval_query_metrics.csv.gz": "ff6696d60da383af8c74431283b5c41bcb00ff283313d712dd2a30712d55ccbf",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/fold2_seed101/stratified_query_metrics.csv.gz": "2e3a8841c13f787b6bd4c79e5352e2e68d5d5b6fa681dc3f7ddd86c3b136c131",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold0_seed101/uniform/budget128/complete.json": "5d054f8c2d791ef62516d53bdf9dff680d8de54e450db50b72a62fea6010a0c7",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold0_seed101/uniform/budget256/complete.json": "3897d7945aff038b8eae8e12c12366b5dd00a6d1a22f468dbe78f667148c7abe",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold0_seed101/uniform/budget512/complete.json": "55e685e765d8617aab856c64e5807ccdecfd7d42b74fe2adddbe34e451a79af7",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold0_seed101/retrieval/budget128/complete.json": "846a3ad95335f4ae60428e1aa1140766bb9f7f2ceb1fc5f41d61000680bb39e4",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold0_seed101/retrieval/budget256/complete.json": "6b83aba43996e4d37ca264100b646f09161696398ce036b173f3a973267135aa",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold0_seed101/retrieval/budget512/complete.json": "4eef81229925c5cf9276dc40da73d519ea916ad218bcdbd23b013c3ab0f81765",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold0_seed101/stratified/budget128/complete.json": "5ce275cbf4eefc748f48b83c2b3fbdebdbc1b35df39865576f9349f8cac93a1b",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold0_seed101/stratified/budget256/complete.json": "d2bb0b3df5b6428910ac04d82fa9d9426ba650b69f301f805a37b00126c6cfc7",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold0_seed101/stratified/budget512/complete.json": "891cb1f5cb3e3da2cd676d56a671bb83e36a47f92452f961261c3d39d9c37f38",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold1_seed101/uniform/budget128/complete.json": "73d1e4cf99344d54f5443010e40f23c2742f16d34c6a79e8cbde50a5d67a43b8",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold1_seed101/uniform/budget256/complete.json": "a8224ea09b06bc1d41b0004796240b4afd84faa168f66534f444d82a1562c1af",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold1_seed101/uniform/budget512/complete.json": "e233d855f9baecb4536977417db7ef70bb5a4bcd26ae1e154f10f1ca1ef19e3b",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold1_seed101/retrieval/budget128/complete.json": "6db19d0b1898744816dbed2773c890b1a23462da8a5ff1c17c2159425c71a99b",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold1_seed101/retrieval/budget256/complete.json": "63cb05f91a8ba85ed3ef584a3bfccf9dba11a0dfc399999dba9a6e16009709d2",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold1_seed101/retrieval/budget512/complete.json": "da2bca86d91ba0f478c0599ff9c11d754c85fce300dc35141e25f682483f92e4",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold1_seed101/stratified/budget128/complete.json": "c1c4f8f65ae20a5230289ef7b9aa9470419b80477a8f283b4260837bc2c4b89d",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold1_seed101/stratified/budget256/complete.json": "41021c2a75d6ecc3b6c38ba357caa39745121d963ec37508e68869090e0852bb",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold1_seed101/stratified/budget512/complete.json": "0e0a3ded20de7978e9bb22d210225d49a15658af95d9ee8b14e46d3647bb5dda",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold2_seed101/uniform/budget128/complete.json": "190d9c0f3c2c341bfecb31259cc0dc5a792098d15142b12dc1f93e3ab67466cd",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold2_seed101/uniform/budget256/complete.json": "f83d026ed3e09c6319908f307e486b9de3e03328f10150d225d81451c0595381",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold2_seed101/uniform/budget512/complete.json": "38dbb33b94675d08af9a380ebd874e2753074591e2d2603d305bfa294ab7df84",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold2_seed101/retrieval/budget128/complete.json": "3764083d04f87be6bbc221d211bbcb935e92a7641ab6239062a3c224052b5d8e",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold2_seed101/retrieval/budget256/complete.json": "48eda6a38d6a9941afe9286ed65d834bed188e421da5be7a175664ef1f11c0f5",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold2_seed101/retrieval/budget512/complete.json": "06970b0b90baf6ea0f44a89dbc379f2b76ff80ef08e2e4c5afaa7d005cc4f420",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold2_seed101/stratified/budget128/complete.json": "c8a28e9fa606a1d2a50727147c0cefdb66c8fde87691818f3985afc531cd3912",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold2_seed101/stratified/budget256/complete.json": "3b78f660eb8baefb8af1d627dea5b152a2e9236948c2e7db5f8c38cd7ed9d08e",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/fold2_seed101/stratified/budget512/complete.json": "90d2c864123020406731834333c99d322e27e68fe8a6a782d7915b2fa29807e1",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/summary_by_fold.csv": "f331fe11439af950e9ff8d13ea246b343ca9017381d40fd8da55c52f53053cc2",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/baseline_reference_pooled.csv": "4561d54f4afd5bb4bd38fa3ef6b9f0d5fe285fa6e403c697e68ca39966641210",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/reference_verification.json": "429be7be8c0050b077b0030d5e14df85175762e95441a0c31fe23b091499b88d",
+    "/Users/haijiezhang/PycharmProjects/ZHJ/results/hupd/learning_curves/verification.json": "3c8c4b758d8625ef4b0a9e349a02a518dbe463bf8081837a2c090de241744023"
+  },
+  "figures": [
+    {
+      "name": "pool_diagnostics",
+      "files": [
+        "pool_diagnostics.pdf",
+        "pool_diagnostics.svg",
+        "pool_diagnostics.png"
+      ],
+      "source_data": [
+        "source_data/pool_diagnostics_folds.csv",
+        "source_data/pool_diagnostics_summary.csv",
+        "source_data/pool_diagnostics_grade3_histogram.csv"
+      ],
+      "nominal_size_inches": [
+        7.1,
+        2.65
+      ]
+    },
+    {
+      "name": "composition",
+      "files": [
+        "composition.pdf",
+        "composition.svg",
+        "composition.png"
+      ],
+      "source_data": [
+        "source_data/composition_measured.csv",
+        "source_data/composition_paired_effect.csv",
+        "source_data/composition_analytical_calibration.csv"
+      ],
+      "nominal_size_inches": [
+        7.1,
+        2.7
+      ]
+    },
+    {
+      "name": "composition_controls",
+      "files": [
+        "composition_controls.pdf",
+        "composition_controls.svg",
+        "composition_controls.png"
+      ],
+      "source_data": [
+        "source_data/composition_controls_measured_differences.csv"
+      ],
+      "nominal_size_inches": [
+        7.1,
+        3.1
+      ]
+    },
+    {
+      "name": "information_effects",
+      "files": [
+        "information_effects.pdf",
+        "information_effects.svg",
+        "information_effects.png"
+      ],
+      "source_data": [
+        "source_data/information_effects_effects.csv",
+        "source_data/information_effects_refits.csv"
+      ],
+      "nominal_size_inches": [
+        7.1,
+        2.6
+      ]
+    },
+    {
+      "name": "graph_effects",
+      "files": [
+        "graph_effects.pdf",
+        "graph_effects.svg",
+        "graph_effects.png"
+      ],
+      "source_data": [
+        "source_data/graph_effects_effects.csv",
+        "source_data/graph_effects_refits.csv"
+      ],
+      "nominal_size_inches": [
+        7.1,
+        2.6
+      ]
+    },
+    {
+      "name": "selection_diagnostics",
+      "files": [
+        "selection_diagnostics.pdf",
+        "selection_diagnostics.svg",
+        "selection_diagnostics.png"
+      ],
+      "source_data": [
+        "source_data/selection_diagnostics_selections.csv",
+        "source_data/selection_diagnostics_graph_off.csv",
+        "source_data/selection_diagnostics_support.csv"
+      ],
+      "nominal_size_inches": [
+        7.1,
+        2.9
+      ]
+    },
+    {
+      "name": "alpha_validation",
+      "files": [
+        "alpha_validation.pdf",
+        "alpha_validation.svg",
+        "alpha_validation.png"
+      ],
+      "source_data": [
+        "source_data/alpha_validation_validation_curves.csv",
+        "source_data/alpha_validation_rho_validation_curves.csv"
+      ],
+      "nominal_size_inches": [
+        7.1,
+        4.4
+      ]
+    },
+    {
+      "name": "grade_boundaries",
+      "files": [
+        "grade_boundaries.pdf",
+        "grade_boundaries.svg",
+        "grade_boundaries.png"
+      ],
+      "source_data": [
+        "source_data/grade_boundaries_all_methods.csv"
+      ],
+      "nominal_size_inches": [
+        7.1,
+        2.8
+      ]
+    },
+    {
+      "name": "learning_curves",
+      "files": [
+        "learning_curves.pdf",
+        "learning_curves.svg",
+        "learning_curves.png"
+      ],
+      "source_data": [
+        "source_data/learning_curves_folds.csv",
+        "source_data/learning_curves_weighted_means.csv",
+        "source_data/learning_curves_fixed_main_references.csv"
+      ],
+      "nominal_size_inches": [
+        7.1,
+        2.8
+      ]
+    }
+  ],
+  "exports": "Editable TrueType PDF, editable-text SVG, 600-dpi PNG",
+  "statistics": "Main effects: 5000 fitting-run/global-component bootstrap draws over five full refits; composition: seed101 component-conditional intervals only; no p-value stars or equivalence margins."
+}

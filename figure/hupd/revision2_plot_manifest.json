@@ -1,0 +1,76 @@
+{
+  "format": "hupd-revision2-figures/1",
+  "script_sha256": "f39575ab7ea7bc94c797fd90d6ce89472982edf7f33694f0790b9ea2a95923c5",
+  "figures": [
+    {
+      "name": "membership_quality",
+      "caption": "Saved-prediction shrinkage toward the training-only mean. Accuracy is query-weighted over the three seed-101 test folds. Differences compare ancestor and common-weight leaf. Bars are 5,000-draw component-only 95% intervals conditional on saved fits. Shrinkage changes calibration and discrimination. At tau=0 both scores are constants and share lexical ranking.",
+      "files": [
+        "membership_quality.pdf",
+        "membership_quality.svg",
+        "membership_quality.png"
+      ],
+      "source_data": [
+        "source_data/membership_quality_classification.csv",
+        "source_data/membership_quality_effects.csv"
+      ],
+      "input_sha256": {
+        "results/hupd/revision2/topology/quality_classification_summary.csv": "37ef5e2e7ba543543dd2304d36645033a95a7ca82f91ba42f023d74c5b93dd17",
+        "results/hupd/revision2/topology/quality_effects.csv": "eaab7c99f73baea35df9bc69d2a8eb18ca89f9a5edd1b48ebf09f9296cae2c68"
+      },
+      "synthetic_values_used": false,
+      "nominal_size_inches": [
+        7.1,
+        2.15
+      ]
+    },
+    {
+      "name": "expanded_learning_curves",
+      "caption": "Expanded LambdaMART capacity and training-query coverage on uniform candidates. Every feature set and budget searches depths 3/5/7/9 and trees 100/200/400/800 using validation only. Lines are query-weighted means and pale points are the three outer test parts. All means all eligible training queries (9,993/9,983/9,966 by fold). Difference bars are component-only intervals conditional on the saved seed-101 upstream fit and the selected models. The focused nDCG ordinate excludes zero.",
+      "files": [
+        "expanded_learning_curves.pdf",
+        "expanded_learning_curves.svg",
+        "expanded_learning_curves.png"
+      ],
+      "source_data": [
+        "source_data/expanded_learning_curves_means.csv",
+        "source_data/expanded_learning_curves_effects.csv",
+        "source_data/expanded_learning_curves_folds.csv"
+      ],
+      "input_sha256": {
+        "results/hupd/revision2/search/pooled_test_means.csv": "1e2f40d47c9ae5571825d9813d1d4e8ec1536212982aa4d58686165eb08f1f0c",
+        "results/hupd/revision2/search/paired_component_effects.csv": "17876523f75c8213cf90a2280d8bd08bd35573d86aa346ed6ba467c16749cf8f",
+        "results/hupd/revision2/search/summary_by_fold.csv": "a914ddf51dfaa3fe4d63f01cb4a500daae7e07444081e0ae1e1fbd4446a7f90d"
+      },
+      "synthetic_values_used": false,
+      "nominal_size_inches": [
+        7.1,
+        2.35
+      ]
+    },
+    {
+      "name": "retuned_gate_effects",
+      "caption": "Matched validation budgets for learned gates and simple mixing. Each objective and the simple reference receives exactly 144 validation candidates. Expected and mean losses search training priors, KL and fitting strength. ListNet additionally uses L2 and temperature. All share six evaluation strengths including .75 and 1. Bars are component-only 95% intervals conditional on seed 101. Positive values favor the gate. One nDCG unit equals 100 percentage points.",
+      "files": [
+        "retuned_gate_effects.pdf",
+        "retuned_gate_effects.svg",
+        "retuned_gate_effects.png"
+      ],
+      "source_data": [
+        "source_data/retuned_gate_effects_effects.csv",
+        "source_data/retuned_gate_effects_selection.csv"
+      ],
+      "input_sha256": {
+        "results/hupd/revision2/gates/paired_effects.csv": "3fdce53f8fc95b55dc65ce5e540378d336e7d0cbdffd11c97e63a496b794c8d9",
+        "results/hupd/revision2/gates/selected_configurations.csv": "1bae09e74267f75d32e6c8f888ebe18d62facf2bd5f00dac4e2cb31e08b04cf8"
+      },
+      "synthetic_values_used": false,
+      "nominal_size_inches": [
+        7.1,
+        2.25
+      ]
+    }
+  ],
+  "historical_figure_manifest_preserved": true,
+  "synthetic_values_used": false
+}
