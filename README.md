@@ -51,8 +51,6 @@ python scripts/reproduce_hupd.py --fresh-refit
 
 The `summaries` stage requires the complete matching saved outputs in `results/hupd/`. Source code alone is insufficient to rebuild the reported results. Full training requires substantial time and disk space. Compiling the paper requires LaTeX and `latexmk`. On macOS, XGBoost may also require `libomp`.
 
-See the [reproduction guide](notes/hupd/reproduction_guide.md) for detailed steps, resource requirements, and saved-state recovery instructions.
-
 ## Data and Models
 
-Patent texts come from HUPD. Text representations and scores use TF–IDF, BM25, and frozen PatentSBERTa. The public reproduction materials do not redistribute raw patent texts or third-party model weights. Download scripts record upstream versions and file checksums. Data and pretrained models remain subject to their respective upstream terms. See the [source audit](notes/hupd/revision2/source_audit.md) for provenance and licensing details.
+Patent texts come from HUPD. Text representations and scores use TF–IDF, BM25, and frozen PatentSBERTa. The public reproduction materials do not redistribute raw patent texts or third-party model weights. Download scripts record upstream versions and file checksums. Data and pretrained models remain subject to their respective upstream terms.
